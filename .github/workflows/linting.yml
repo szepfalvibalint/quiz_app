@@ -29,7 +29,4 @@ jobs:
         black $(git ls-files '*.py') --check --verbose --diff --color
     - name: Analysing code with isort
       run: |
-        isort $(git ls-files '*.py') -c
-    - name: Analysing code with mypy
-      run: |
-        isort $(git ls-files '*.py') -c
+        isort $(git ls-files '*.py') --profile black -c
