@@ -31,6 +31,8 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    "play_quiz.apps.PlayQuizConfig",
+    "nested_admin",
     "django.contrib.admin",
     "django.contrib.auth",
     "django.contrib.contenttypes",
