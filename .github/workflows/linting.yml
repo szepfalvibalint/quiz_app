@@ -23,7 +23,7 @@ jobs:
         pip install -r requirements_liniting.txt
     - name: Analysing the code with pylint
       run: |
-        pylint $(git ls-files '*.py')
+        pylint $(git ls-files '*.py') --rcfile .pylintrc
     - name: Analysing code with black
       run: |
         black $(git ls-files '*.py') --check --verbose --diff --color
